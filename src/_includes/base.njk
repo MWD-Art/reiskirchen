@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{ title }}</title>
-	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="images/favicon.png" rel="icon">
+	<!--Title-->
+	<title>Reiskirchen 2</title>
+	<!-- CSS -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="/assets/css/simple-line-icons.min.css">
+	<!-- Themify Icons -->
+	<link rel="stylesheet" href="/assets/css/themify-icons.css">
+	<!-- Owl Slider -->
+	<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/assets/css/magnific-popup.css">
+	<!-- Revolution Slider -->
+	<link rel="stylesheet" type="text/css" href="rs-plugin/fonts/pe-icon-7-stroke//assets/css/pe-icon-7-stroke.css">
+	<!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="rs-plugin//assets/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="rs-plugin//assets/css/main-slider/rs6.css">
+	<!-- Main Style -->
+	<link rel="stylesheet" href="/assets/css/color-schemes/red.css">
+	<link rel="stylesheet" href="/assets/css/style.css" class="main-style">
+	<link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
-<body>
-	<header>
-		<h1>{{ title }}</h1>
-	</header>
+<!--Body Start-->
+
+<body data-res-from="1025">
+	<!--Page Loader-->
+	<div class="page-loader"></div>
+	{% include 'components/mobile.njk' %}
+	{% include 'components/header.njk' %}
 	<main>
 	{{ content | safe }}
 	</main>
+
+	{% include 'components/footer.njk' %}
+
+	<!-- jQuery Lib -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<!-- Bootstrap Js -->
+	<script src="/assets/js/bootstrap.bundle.min.js"></script>
+	<!-- Easing Js -->
+	<script src="/assets/js/jquery.easing.min.js"></script>
+	<!-- Carousel Js Code -->
+	<script src="/assets/js/owl.carousel.min.js"></script>
+	<!-- Paroller Js -->
+	<script src="/assets/js/jquery.paroller.min.js"></script>
+	<!-- Isotope Js -->
+	<script src="/assets/js/isotope.pkgd.min.js"></script>
+	<!-- Magnific Popup Js -->
+	<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Validator Js -->
+	<script src="/assets/js/validator.min.js"></script>
+	<!-- Smart Resize Js -->
+	<script src="/assets/js/smartresize.min.js"></script>
+	<!-- Appear Js -->
+	<script src="/assets/js/jquery.appear.min.js"></script>
+	<!-- Theme Custom Js -->
+	<script src="/assets/js/custom.js"></script>
+	<!-- REVOLUTION JS FILES -->
+	<script src="rs-plugin//assets/js/jquery.themepunch.tools.min.js"></script>
+	<script src="rs-plugin//assets/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+	<script src="rs-plugin//assets/js/main-slider/rbtools.min.js"></script>
+	<script src="rs-plugin//assets/js/main-slider/rs6.min.js"></script>
+	<script src="rs-plugin//assets/js/main-slider/home-1.js"></script>
+	<script src="{{ '//assets/js/index.js' | url }}"></script>
 </body>
 </html>
